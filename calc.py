@@ -15,7 +15,8 @@ class Calculator:
         self.a=float(input("a:"))
     def setB(self):
         self.b=float(input("b:"))
-
+    def sin(self):
+        return math.sin(self.a/self.b)
     def pornesteCalculator(self):
 
 
@@ -26,6 +27,7 @@ class Calculator:
         print("4. Divide")
         print("5. setA")
         print("6. setB")
+        print("7. Sin")
         a=int(input("Enter your choice:"))
         match a:
             case 1:
@@ -40,6 +42,8 @@ class Calculator:
                 self.setA()
             case 6:
                 self.setB()
+            case 7:
+                self.sin()
         self.pornesteCalculator()
 
 if __name__ == '__main__':
