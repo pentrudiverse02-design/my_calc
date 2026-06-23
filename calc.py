@@ -1,4 +1,4 @@
-from cmath import cos
+from cmath import cos,sin
 
 
 class Calculator:
@@ -19,6 +19,8 @@ class Calculator:
         self.b=float(input("b:"))
     def cos(self):
         return cos(self.a/self.b)
+    def sin(self):
+        return sin(self.a/self.b)
     def pornesteCalculator(self):
 
 
@@ -30,6 +32,7 @@ class Calculator:
         print("5. setA")
         print("6. setB")
         print("7. cos")
+        print("8. Sin")
         a=int(input("Enter your choice:"))
         match a:
             case 1:
@@ -46,6 +49,8 @@ class Calculator:
                 self.setB()
             case 7:
                 print(self.cos())
+            case 8:
+                self.sin()
         self.pornesteCalculator()
 
 if __name__ == '__main__':
